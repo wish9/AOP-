@@ -18,7 +18,8 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 //@Import(Aspect2.class)
 //@Import(Aspect3.class)
 //@Import(Aspect4.class)
-@Import({Aspect5.LogAspect.class, Aspect5.TxAspect.class})
+//@Import({Aspect5.LogAspect.class, Aspect5.TxAspect.class})
+@Import(Aspect6.class)
 public class AopTest {
 
     @Autowired
