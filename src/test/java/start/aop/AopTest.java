@@ -11,6 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import start.aop.order.aop.Aspect1;
 import start.aop.order.aop.Aspect2;
 import start.aop.order.aop.Aspect3;
+import start.aop.order.aop.Aspect4;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 
@@ -18,7 +19,8 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 @SpringBootTest
 //@Import(Aspect1.class)
 //@Import(Aspect2.class)
-@Import(Aspect3.class)
+//@Import(Aspect3.class)
+@Import(Aspect4.class)
 public class AopTest {
 
     @Autowired
