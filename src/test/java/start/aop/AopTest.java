@@ -8,10 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import start.aop.order.aop.Aspect1;
-import start.aop.order.aop.Aspect2;
-import start.aop.order.aop.Aspect3;
-import start.aop.order.aop.Aspect4;
+import start.aop.order.aop.*;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 
@@ -20,7 +17,8 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 //@Import(Aspect1.class)
 //@Import(Aspect2.class)
 //@Import(Aspect3.class)
-@Import(Aspect4.class)
+//@Import(Aspect4.class)
+@Import({Aspect5.LogAspect.class, Aspect5.TxAspect.class})
 public class AopTest {
 
     @Autowired
